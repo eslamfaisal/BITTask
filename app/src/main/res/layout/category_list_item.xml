@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:layout_margin="2dp"
+    android:fitsSystemWindows="false"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:progressBarAutoRotateInterval="1000"
+            app:progressBarImage="@drawable/ic_loading"
+            app:progressBarImageScaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_gradient_soft"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            tool:text="Vegetables" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
